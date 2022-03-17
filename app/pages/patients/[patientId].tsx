@@ -115,9 +115,9 @@ export const Patient = () => {
             patient={patient}
             title="Profile"
             name={patient.name}
-            mobile="9933445566"
-            email="patient@gmail.com"
-            location="Chennai"
+            mobile={patient.mobile}
+            email={patient.email}
+            location={patient.location}
           />
           <Box p="16px" my={{ sm: "24px", xl: "0px" }}>
             <Text fontSize="lg" fontWeight="bold">

@@ -63,7 +63,7 @@ export const SensorData = () => {
   return (
     <Box>
       <Head>
-        <title>Patient Dashboard</title>
+        <title>Real-Time Sensor Data</title>
       </Head>
 
       <Flex align="center" p={4}>

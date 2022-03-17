@@ -14,21 +14,21 @@ import { FaEllipsisV } from "react-icons/fa"
 
 function TableRow(props) {
   const { name, status, progression, type } = props
-  const textColor = useColorModeValue("gray.700", "white")
+
   return (
     <Tr>
-      <Td minWidth={{ sm: "250px" }} pl="0px">
+      <Td pl="0px">
         <Flex alignItems="center" py=".8rem" minWidth="100%" flexWrap="nowrap">
           {type == "patients" && <Avatar h={"24px"} w={"24px"} me="18px" />}
-          <Text fontSize="md" color={textColor} fontWeight="bold" minWidth="100%">
+          <Text fontSize="md" fontWeight="bold" minWidth="100%">
             {name}
           </Text>
         </Flex>
       </Td>
 
       <Td>
-        <Text fontSize="md" color={textColor} fontWeight="bold" pb=".5rem">
-          {status}
+        <Text fontSize="md" fontWeight="bold" pb=".5rem">
+          {status} Severity
         </Text>
       </Td>
       <Td>
