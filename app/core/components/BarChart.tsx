@@ -9,7 +9,7 @@ const barChartData = [
   },
 ]
 
-const barChartOptions: ApexOptions = {
+const barChartOptions: any = {
   chart: {
     toolbar: {
       show: false,

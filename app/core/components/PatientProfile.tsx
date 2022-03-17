@@ -1,8 +1,8 @@
-import { Flex, Icon, Link, Spacer, Text, useColorModeValue } from "@chakra-ui/react"
+import { Flex, Icon, Spacer, Text, useColorModeValue } from "@chakra-ui/react"
 import React from "react"
 import { Box } from "@chakra-ui/react"
 import { Suspense } from "react"
-import { Head, useRouter, useQuery, useParam, BlitzPage, useMutation, Routes } from "blitz"
+import { Head, useRouter, useQuery, useParam, BlitzPage, useMutation, Routes, Link } from "blitz"
 import Layout from "app/core/layouts/Layout"
 import getPatient from "app/patients/queries/getPatient"
 import deletePatient from "app/patients/mutations/deletePatient"
@@ -23,8 +23,8 @@ const PatientProfile = ({ patient, title, name, mobile, email, location }) => {
             type="button"
             onClick={async () => {
               if (window.confirm("This will be deleted")) {
-                await deletePatientMutation({ id: patient.id })
-                router.push(Routes.PatientsPage())
+                // await deletePatientMutation({ id: patient.id })
+                // router.push(Routes.PatientsPage())
               }
             }}
             style={{ marginLeft: "0.5rem" }}
