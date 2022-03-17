@@ -89,9 +89,13 @@ export const Patient = () => {
       <Head>
         <title>Patient Dashboard</title>
       </Head>
-      <Button colorScheme="blue" m={4}>
-        <Link href={Routes.PatientsPage()}>Back to Patients</Link>
-      </Button>
+      <Flex align="center" p={4}>
+        <Heading size="xl">Patient Dashboard</Heading>
+        <Spacer />
+        <Button colorScheme="blue" m={4}>
+          <Link href={Routes.PatientsPage()}>Back to Patients</Link>
+        </Button>
+      </Flex>
       <Grid
         p="16px"
         mx={{ sm: "24px", xl: "0px" }}
@@ -171,7 +175,7 @@ export const Patient = () => {
                 <Link href="/">Gait Parameters</Link>
               </Button>
               <Button colorScheme="blue" size="lg">
-                <Link href="/">Sensor Data</Link>
+                <Link href="/patients/1/sensors">Sensor Data</Link>
               </Button>
             </Stack>
           </Flex>
