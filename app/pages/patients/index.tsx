@@ -222,16 +222,16 @@ export const PatientsList = () => {
         </Flex>
       </Box>
       <Box>
-        <Button colorScheme="blue" m={2}>
+        <Button colorScheme="blue" my={4}>
           <Link href={Routes.NewPatientPage()}>Create Patient</Link>
         </Button>
       </Box>
 
       <Box bg="gray.100" rounded="lg" p="16px" overflowX={{ sm: "scroll", xl: "hidden" }}>
-        <Table variant="simple" size="lg">
+        <Table variant="simple">
           <Tbody>
             {patients.map((patient) => (
-              <Flex key={patient.id} rounded="lg">
+              <Flex key={patient.id}>
                 <TableRow
                   name={patient.name}
                   status={patient.status}
