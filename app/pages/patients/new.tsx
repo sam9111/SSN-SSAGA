@@ -1,5 +1,6 @@
 import { Link, useRouter, useMutation, BlitzPage, Routes } from "blitz"
 import Layout from "app/core/layouts/Layout"
+import { Box, Text } from "@chakra-ui/react"
 import createPatient from "app/patients/mutations/createPatient"
 import { PatientForm, FORM_ERROR } from "app/patients/components/PatientForm"
 
@@ -8,9 +9,7 @@ const NewPatientPage: BlitzPage = () => {
   const [createPatientMutation] = useMutation(createPatient)
 
   return (
-    <div>
-      <h1>Create New Patient</h1>
-
+    <Box py="30px" mb="0px">
       <PatientForm
         submitText="Create Patient"
         // TODO use a zod schema for form validation
@@ -30,13 +29,7 @@ const NewPatientPage: BlitzPage = () => {
           }
         }}
       />
-
-      <p>
-        <Link href={Routes.PatientsPage()}>
-          <a>Patients</a>
-        </Link>
-      </p>
-    </div>
+    </Box>
   )
 }
 
