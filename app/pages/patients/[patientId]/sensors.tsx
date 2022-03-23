@@ -67,7 +67,7 @@ export const SensorData = () => {
       </Head>
 
       <Flex align="center" p={4}>
-        <Heading size="xl">Real-Time Sensor Data</Heading>
+        <Heading size="lg">Real-Time Sensor Data</Heading>
         <Spacer />
         <Button colorScheme="blue" m={4}>
           <Link href={"/patients/1"}>Back to Patients</Link>
@@ -75,7 +75,7 @@ export const SensorData = () => {
       </Flex>
       <SimpleGrid columns={3} spacing={10} p="16px">
         {SENSORS.map((sensor, index) => (
-          <Box bg="white" rounded="lg" p="16px" key={index}>
+          <Box bg="gray.100" rounded="lg" p="16px" key={index}>
             <Text fontSize="xl" fontWeight="bold" pb=".5rem">
               {sensor} Sensor
             </Text>

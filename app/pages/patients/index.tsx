@@ -40,7 +40,7 @@ export const PatientsList = () => {
       </Head>
 
       <Flex align="center" p={4}>
-        <Heading size="xl">Patient Records</Heading>
+        <Heading size="lg">Patient Records</Heading>
         <Spacer />
         <Button colorScheme="blue" m={4}>
           <Link href={Routes.NewPatientPage()}>Create Patient</Link>
