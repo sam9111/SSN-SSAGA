@@ -70,7 +70,7 @@ export const SensorData = () => {
         <Heading size="lg">Real-Time Sensor Data</Heading>
         <Spacer />
         <Button colorScheme="blue" m={4}>
-          <Link href={"/patients/1"}>Back to Patients</Link>
+          <Link href={"/patients/1"}>Back to Patient</Link>
         </Button>
       </Flex>
       <SimpleGrid columns={3} spacing={10} p="16px">

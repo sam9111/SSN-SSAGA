@@ -46,7 +46,7 @@ export const GaitParams = () => {
         <Heading size="lg"> Real-Time Gait Parameters</Heading>
         <Spacer />
         <Button colorScheme="blue" m={4}>
-          <Link href={"/patients/1"}>Back to Patients</Link>
+          <Link href={"/patients/1"}>Back to Patient</Link>
         </Button>
       </Flex>
 
