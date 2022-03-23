@@ -34,7 +34,7 @@ export const PatientsList = () => {
   const goToNextPage = () => router.push({ query: { page: page + 1 } })
 
   return (
-    <Box>
+    <Box p="16px" mx={{ sm: "24px", xl: "0px" }}>
       <Head>
         <title>Patients</title>
       </Head>
@@ -47,18 +47,23 @@ export const PatientsList = () => {
         </Button>
       </Flex>
 
-      <Box rounded="lg" p="16px" overflowX={{ sm: "scroll", xl: "hidden" }} bg="white">
+      <Box bg="gray.100" rounded="lg" p="16px" overflowX={{ sm: "scroll", xl: "hidden" }}>
         <Table variant="simple" size="lg">
           <Tbody>
             {patients.map((patient) => (
-              <Link key={patient.id} href={Routes.ShowPatientPage({ patientId: patient.id })}>
+              <Flex key={patient.id} rounded="lg">
                 <TableRow
                   name={patient.name}
                   status={patient.status}
                   progression={patient.severity_score}
                   type="patients"
                 />
-              </Link>
+                <Spacer />
+                <Button colorScheme="blue" m={4}>
+                  {" "}
+                  <Link href={Routes.ShowPatientPage({ patientId: patient.id })}>View</Link>
+                </Button>
+              </Flex>
             ))}
           </Tbody>
         </Table>

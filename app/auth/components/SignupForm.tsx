@@ -28,21 +28,6 @@ export const SignupForm = (props: SignupFormProps) => {
 
   return (
     <Flex direction="column" alignSelf="center" justifySelf="center" overflow="hidden">
-      <Box
-        position="absolute"
-        minH={{ base: "70vh", md: "50vh" }}
-        w={{ md: "calc(100vw - 50px)" }}
-        borderRadius={{ md: "15px" }}
-        left="0"
-        right="0"
-        bgRepeat="no-repeat"
-        overflow="hidden"
-        zIndex="-1"
-        top="0"
-        bgSize="cover"
-        mx={{ md: "auto" }}
-        mt={{ md: "14px" }}
-      ></Box>
       <Flex
         direction="column"
         textAlign="center"
@@ -52,7 +37,7 @@ export const SignupForm = (props: SignupFormProps) => {
         mb="30px"
       >
         <Text fontSize="4xl" fontWeight="bold">
-          Welcome!
+          SAGA
         </Text>
       </Flex>
       <Flex alignItems="center" justifyContent="center" mb="60px" mt="20px">

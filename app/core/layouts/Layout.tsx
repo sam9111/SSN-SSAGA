@@ -7,7 +7,7 @@ const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
         <title>{title || "SSN-SSAGA"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box bg="gray.100">{children}</Box>
+      <Box>{children}</Box>
     </>
   )
 }

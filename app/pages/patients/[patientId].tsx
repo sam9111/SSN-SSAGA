@@ -106,7 +106,7 @@ export const Patient = () => {
         <GridItem
           rowSpan={2}
           colSpan={1}
-          bg="white"
+          bg="gray.100"
           rounded="lg"
           p="16px"
           my={{ sm: "24px", xl: "0px" }}
@@ -126,13 +126,13 @@ export const Patient = () => {
           </Box>
         </GridItem>
 
-        <GridItem colSpan={2} bg="white" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
+        <GridItem colSpan={2} bg="gray.100" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
           <Text fontSize="xl" fontWeight="bold" pb=".5rem">
             Real Time Data
           </Text>
           <RealTimeLineChart dataList={dataList} range={TIME_RANGE_IN_MILLISECONDS} />
         </GridItem>
-        <GridItem colSpan={2} bg="white" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
+        <GridItem colSpan={2} bg="gray.100" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
           <Text fontSize="xl" fontWeight="bold" pb=".5rem">
             Past Activity
           </Text>
@@ -146,7 +146,7 @@ export const Patient = () => {
             ))}
           </Select>
         </GridItem>
-        <GridItem colSpan={4} bg="white" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
+        <GridItem colSpan={4} bg="gray.100" rounded="lg" p="16px" my={{ sm: "24px", xl: "0px" }}>
           <Text fontSize="xl" fontWeight="bold" pb=".5rem">
             Real-Time Gait Parameters
           </Text>
@@ -162,7 +162,7 @@ export const Patient = () => {
             ))}
           </SimpleGrid>
         </GridItem>
-        <GridItem colSpan={5} bg="white" rounded="lg">
+        <GridItem colSpan={5} bg="gray.100" rounded="lg">
           <Flex>
             <Box w="100%" m={4}>
               <Alerts title="Last 7 days" captions={[]} />
