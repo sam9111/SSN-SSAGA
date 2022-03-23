@@ -37,7 +37,7 @@ export const SignupForm = (props: SignupFormProps) => {
         mb="30px"
       >
         <Text fontSize="4xl" fontWeight="bold">
-          SAGA
+          SSAGA
         </Text>
       </Flex>
       <Flex alignItems="center" justifyContent="center" mb="60px" mt="20px">
@@ -49,7 +49,7 @@ export const SignupForm = (props: SignupFormProps) => {
           p="40px"
           mx={{ base: "100px" }}
           bg={"white"}
-          boxShadow="0 20px 27px 0 rgb(0 0 0 / 5%)"
+          boxShadow="2xl"
         >
           <Form
             submitText="Signup"
