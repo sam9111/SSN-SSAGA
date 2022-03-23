@@ -8,19 +8,21 @@ const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box>{children}</Box>
-      <Box>
-        <Center bg="black" pt="8px" pb="1px">
-          <Text fontSize="md" fontWeight="bold" color="white">
-            SSN SSAGA
-          </Text>
-        </Center>
-      </Box>
-      <Box>
-        <Center bg="black" pt="1px" pb="8px">
-          <Text fontSize="md" fontWeight="bold" color="white">
-            Orthotic Leg Assessment
-          </Text>
-        </Center>
+      <Box w="100%" position="fixed" bottom="0px">
+        <Box>
+          <Center bg="black" pt="8px" pb="1px">
+            <Text fontSize="md" fontWeight="bold" color="white">
+              SSN SSAGA
+            </Text>
+          </Center>
+        </Box>
+        <Box>
+          <Center bg="black" pt="1px" pb="8px">
+            <Text fontSize="md" fontWeight="bold" color="white">
+              Orthotic Leg Assessment
+            </Text>
+          </Center>
+        </Box>
       </Box>
     </>
   )
