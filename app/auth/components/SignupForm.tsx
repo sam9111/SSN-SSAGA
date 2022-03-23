@@ -41,16 +41,7 @@ export const SignupForm = (props: SignupFormProps) => {
         </Text>
       </Flex>
       <Flex alignItems="center" justifyContent="center" mb="60px" mt="20px">
-        <Flex
-          direction="column"
-          w="445px"
-          background="transparent"
-          borderRadius="15px"
-          p="40px"
-          mx={{ base: "100px" }}
-          bg={"white"}
-          boxShadow="2xl"
-        >
+        <Flex direction="column" p="40px" mx={{ base: "100px" }} bg={"gray.100"} rounded="lg">
           <Form
             submitText="Signup"
             schema={Signup}
@@ -69,14 +60,15 @@ export const SignupForm = (props: SignupFormProps) => {
               }
             }}
           >
-            <LabeledTextField name="name" label="Name" placeholder="Name" />
+            <LabeledTextField name="name" bg="white" label="Name" placeholder="Name" />
 
-            <LabeledTextField name="email" label="Email" placeholder="Email" />
+            <LabeledTextField name="email" bg="white" label="Email" placeholder="Email" />
             <LabeledTextField
               name="password"
               label="Password"
               placeholder="Password"
               type="password"
+              bg="white"
             />
             <FormControl display="flex" alignItems="center" mb="24px">
               <Switch id="remember-login" colorScheme="teal" me="10px" />
