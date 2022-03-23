@@ -1,5 +1,6 @@
 import { Head, BlitzLayout } from "blitz"
 import { Box, Container, Center, Text } from "@chakra-ui/react"
+import { Footer } from "app/core/components/Footer"
 const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
   return (
     <>
@@ -7,22 +8,10 @@ const Layout: BlitzLayout<{ title?: string }> = ({ title, children }) => {
         <title>{title || "SSN-SSAGA"}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box>{children}</Box>
-      <Box w="100%" position="fixed" bottom="0px">
-        <Box>
-          <Center bg="black" pt="8px" pb="1px">
-            <Text fontSize="md" fontWeight="bold" color="white">
-              SSN SSAGA
-            </Text>
-          </Center>
-        </Box>
-        <Box>
-          <Center bg="black" pt="1px" pb="8px">
-            <Text fontSize="md" fontWeight="bold" color="white">
-              Orthotic Leg Assessment
-            </Text>
-          </Center>
-        </Box>
+      <Box>
+        <Box minH="100vh">{children}</Box>
+
+        <Footer />
       </Box>
     </>
   )
